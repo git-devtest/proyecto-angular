@@ -2,8 +2,14 @@
     <p>Bienvenido a la aplicación Angular. Este es el contenido principal.</p>
     <p appHighlight [highlightColor]="'lightblue'">app works!</p>
 
-    <div *appIfLogged="false">
+    <div *appIfLogged="true">
       <p>Este contenido solo se muestra si el usuario está logueado.</p>
     </div>
+
+    <h2>Ejemplos de Pipes en Angular 17+</h2>
+    <p>Fecha actual formateada: {{ today | date: 'shortDate' }}</p>
+    <p>Precio en formato de moneda: {{ price | currency: 'USD' }}</p>
+    <p>Texto en mayúsculas: {{ name | uppercase }}</p>
+    <p>Mensaje con exclamación: {{ name | exclaim: 3 }}</p>
+    <p>Mensaje en modo título: {{ name | titleCasePipe }}</p>
 </main>
-  
